@@ -22,8 +22,10 @@ h1 {
     margin-left: 80;
 }
 
-#principal{ margin-left: 60px;
-width: 152px}
+#principal { 
+    margin-left: 60px;
+    width: 152px
+}
 #rate{ margin-left: 25px;}
 #years{ margin-left: 27px;}
 
