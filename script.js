@@ -15,15 +15,12 @@ function compute()
         document.getElementById("principal").focus();
         return false;
     }
-    // Cast principal variable to number and add it to interest.
-    principal = Number(principal);
-    var amount = principal +  interest;
 
     // Assign each line in result to a variable for readability.
     var line1 = "\<br\>\<br\>If you deposit " + "<mark>" + principal + "</mark>,\<br\>";
-    var line2 = "at an interest rate of " + "<mark>" + rate + "</mark>%.\<br\>";
-    var line3 = "You will receive an amount of " + "<mark>" + amount + "</mark>,\<br\>";
-    var line4 = "in the year " + "<mark>" + year + "</mark>.";
+    var line2 = "at an interest rate of " + "<mark>" + rate + "%</mark>.\<br\>";
+    var line3 = "You will receive an amount of " + "<mark>" + interest + "</mark>,\<br\>";
+    var line4 = "in the year " + "<mark>" + year + "</mark>";
 
     // Modify html element "result" with the concatenation of new lines.
     document.getElementById("result").innerHTML=line1 + line2 + line3 + line4;
@@ -34,5 +31,5 @@ function updateRate()
 {
     // Retreive and update range value next to Rate slider.
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval + "%";
 }

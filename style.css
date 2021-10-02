@@ -1,24 +1,30 @@
 body {
     background-color:black;
+    font-family:arial;
+    color:white
 }
 
 h1 {
     color:grey;
+    font-family:verdana
 }
 
 .maindiv {
     background-color: white;
     color: black;
-    width: 400px;
+    width: 500px;
     padding: 20px;
     border-radius: 25px;
     margin: auto;
 }
 
 .inputFields {
-    padding: 0px 20px 0px 60px;
+    margin-left: 80;
 }
 
-#highlight {
-    background-color: none;
-}
+#principal{ margin-left: 60px;
+width: 152px}
+#rate{ margin-left: 25px;}
+#years{ margin-left: 27px;}
+
+
